@@ -3,16 +3,23 @@
 # TP2
 import random
 
+while
+    chiffre_aleatoire = random.randint(1, 1000)
 
-chiffre_aleatoire = random.randint(1, 1000)
+    reponse = False
 
-guessed_number = int(input("quel est ton essait (nombre)? \n"))
+    while reponse == False:
+        guessed_number = int(input("quel est ton essait (nombre)? \n"))
 
-if guessed_number < chiffre_aleatoire :
-    print("c'est gratuit!")
+        if guessed_number < chiffre_aleatoire :
+            print("trop petit!")
 
-if guessed_number > chiffre_aleatoire :
-    print("cela coute 5,78$ ")
+        if guessed_number > chiffre_aleatoire :
+            print("trop grand!")
 
-if guessed_number = chiffre_aleatoire :
-    print("cela coute 13,01$")
+        if guessed_number == chiffre_aleatoire :
+            print("oui, c'est ca!")
+            reponse = True
+
+    choix_rec = str(input('veux-tu recommencer? o/n \n'))
+    if choix_rec == o:

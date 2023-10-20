@@ -8,11 +8,14 @@ recommencer = True
 
 #boucle qui permet a l'utilisateur de recommencer le jeu
 while(recommencer == True):
-    chiffre_aleatoire = random.randint(1, 1000)
+    #mettre une limite (range) au nombre random maximal
+    limite = int(input('choisicer une limite de nombre a avoir: \n'))
+
+    chiffre_aleatoire = random.randint(1, limite)
     print(chiffre_aleatoire)
     reponse = False
 
-    #boucle qui permet a l'utilisateur de
+    #boucle qui permet a l'utilisateur de refaire un essai
     while reponse == False:
         guessed_number = int(input("quel est ton essait (nombre)? \n"))
 
